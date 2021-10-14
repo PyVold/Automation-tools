@@ -1,0 +1,22 @@
+configure port 1/1/c1 connector breakout c1-100g
+configure port 1/1/c1 no shutdown
+configure port 1/1/c1/1 no shutdown
+configure port 1/1/c2 connector breakout c1-100g
+configure port 1/1/c2 no shutdown
+configure port 1/1/c2/1 no shutdown
+configure port 1/1/c3 connector breakout c1-100g
+configure port 1/1/c3 no shutdown
+configure port 1/1/c3/1 no shutdown
+configure port 1/1/c4 connector breakout c1-100g
+configure port 1/1/c4 no shutdown
+configure port 1/1/c4/1 no shutdown
+configure port 1/1/c5 connector breakout c1-100g
+configure port 1/1/c5 no shutdown
+configure port 1/1/c5/1 no shutdown
+configure port 1/1/c6 connector breakout c1-100g
+configure port 1/1/c6 no shutdown
+configure port 1/1/c6/1 no shutdown
+
+admin save
+
+configure system management-interface configuration-mode model-driven  

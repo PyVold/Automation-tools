@@ -1,0 +1,42 @@
+CTYPE html>
+<html>
+<center>
+<form method="post"><br>
+                <h3>Choose one of the ready templates or write your own</h3>
+                <td><select name="template_names" method="POST" action="/">
+                    <option value="selects">Select a template</option>
+                    {% for template_name in template_names %}
+                        <option value="{{template_name}}">{{template_name}}</option>
+                    {% endfor %}
+                    </select></td>
+                <td><input type="submit" name="submit" value="submit"/></td></form>
+<br><br>
+
+<body>
+</center>
+<form method="post">
+        <table  style="width: 50%;">
+    <tr>
+        <td><h1>Jinja template here</h1></td>
+        <td><h1>Yaml variables here</h1></td>
+    </tr>
+            <tr align="center">
+        <td><textarea rows="10" cols="50" name="jin" id="jin">{{jin}}</textarea></td>
+
+
+    <td><textarea id="yamlt" name="yamlt" rows="10" cols="50">{{yamlt}}</textarea></td>
+            </tr>
+            <tr><td><input type="submit" name="submit" value="submit"/></td></tr>
+        </table>
+
+
+    </form>
+</body>
+
+</html>
+
+</form>
+<h1>Configuration result</h1>
+ <textarea id="render" name="render" rows="10" cols="50">{{configresult}}</textarea>
+
+
