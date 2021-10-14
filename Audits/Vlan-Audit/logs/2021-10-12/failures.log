@@ -1,0 +1,40 @@
+2021-10-12 17:41:47,322 ERROR Traceback (most recent call last):
+  File "main.py", line 53, in main
+    dvc.append(hostname.strip())
+NameError: name 'hostname' is not defined
+
+2021-10-12 17:43:00,599 ERROR Traceback (most recent call last):
+  File "main.py", line 60, in main
+    done_calls = await get_vlans(dvc)
+TypeError: get_vlans() missing 3 required positional arguments: 'conf', 'user', and 'password'
+
+2021-10-12 17:46:56,679 ERROR Traceback (most recent call last):
+  File "main.py", line 60, in main
+    done_calls = await get_vlans(dvc, user, password)
+TypeError: get_vlans() missing 1 required positional argument: 'password'
+
+2021-10-12 18:13:26,395 ERROR Traceback (most recent call last):
+  File "main.py", line 60, in main
+    done_calls = await get_vlans(dvc, conf, user, password)
+  File "main.py", line 13, in get_vlans
+    done_calls = {executor.submit(api_call, 'vlans', hostname, conf,'', user, password): hostname for hostname in dvc}
+  File "/home/id961912/.conda/envs/py3/lib/python3.6/concurrent/futures/_base.py", line 611, in __exit__
+    self.shutdown(wait=True)
+  File "/home/id961912/.conda/envs/py3/lib/python3.6/concurrent/futures/thread.py", line 152, in shutdown
+    t.join()
+  File "/home/id961912/.conda/envs/py3/lib/python3.6/threading.py", line 1056, in join
+    self._wait_for_tstate_lock()
+  File "/home/id961912/.conda/envs/py3/lib/python3.6/threading.py", line 1072, in _wait_for_tstate_lock
+    elif lock.acquire(block, timeout):
+KeyboardInterrupt
+
+2021-10-12 19:44:43,858 ERROR Traceback (most recent call last):
+  File "main.py", line 73, in main
+    all_data.append(Hostname(el[0]))
+NameError: name 'el' is not defined
+
+2021-10-12 20:35:42,096 ERROR Traceback (most recent call last):
+  File "main.py", line 87, in main
+    all_data.append(Hostname(eachline.strip()))
+NameError: name 'Hostname' is not defined
+
