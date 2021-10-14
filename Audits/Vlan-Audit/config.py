@@ -4,7 +4,7 @@ import logging
 
 class Configuration (object):
     def __init__(self):
-        self.gateway = '10.244.2.17'
+        self.gateway = 'API IP ADDRESS'
         self.version = 'v1'
         self.api_base = 'https://' + self.gateway + '/api/' + self.version
         self.auth = ('username', 'password')
